@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap%27');
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    src: url(../fonts/merriweather-v30-latin_cyrillic-700.eot);
+    src: local(''),
+    url(../fonts/merriweather-v30-latin_cyrillic-700.svg)
+    format('svg'),
+    url(../fonts/merriweather-v30-latin_cyrillic-700.ttf)
+    format('truetype'),
+    url(../fonts/merriweather-v30-latin_cyrillic-700.woff)
+    format('woff')
+    url(../fonts/merriweather-v30-latin_cyrillic-700.woff2)
+    format('woff2');
+}
+
+/* Глобальные стили */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+background-image: url(../img/header.jpg);
+background-repeat: no-repeat;
+height: 100vh;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+font-size: 22px;
+height: 100%;
+line-height: 1.5;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.wrapper {
+display: flex;
+flex-direction: column;
+min-height: 100%;
+}
+.main {
+width: 80%;
+background: rgba(255, 255, 255, 0.864);
+margin: 0 auto;
+padding: 1% 2%;
+flex: 1 1 auto;
+}
+
+.section {
+padding: 20px;
+border-bottom: 1px solid #2f605a;
+}
+
+/* шапка */
+.header{
+background: #fff;
+text-align: center;
+height: 100%;
+}
+.header-top {
+padding: 20px 0 0 0;
+}
+.logo-img {
+width:  15%;
+}
+
+.header-bottom {
+background: #447e6856;
+}
+.nav {
+padding: 20px 0;
+}
+.menu {
+list-style: none;
+}
+.menu_item {
+display: inline-block;
+margin: 0 20px;
+}
+.menu_link {
+font-family: 'Playfair Display SC', serif;
+color: #2f605a;
+transition: all 0.8s;
+}
+.menu_link:hover {
+color: #d18719;
+}
+
+.menu_link:active {
+color: rgb(202, 13, 145);
+}
+
+/* Основной контент */
+.section_title {
+    text-align: center;
+    font-family: 'Playfair Display SC', sans-serif;
+    margin: 20 px 0;
+    font-size: 2.5vw;
+    color: rgba(0, 0, 0, 0.51);
+
+}
+
+.section_subtitle {
+    color: #2f605a;
+    margin: 10px 0;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px #d1a452;
+}
+
+.section_text {
+color: #000;
+}
+
+.section {
+    background: rgb(255, 250, 250);
+    margin: 1.5em 0;
+    padding: 0 20px;
+    }
+    
+.section{
+        background: rgb(255, 250, 250);
+        margin: 1.5em 0;
+        padding: 0 45px;
+}
+
+.person__galery {
+display: inline-block;
+width: 30%;
+text-align: center;
+margin: 0 20px;
+}
+
+.person__galery-img{
+    border: 2px solid #447e68;
+    padding: 3px;
+}
+details {
+padding: 10px 0;
+}
+
+summary {
+color: #2f605a;
+font-size: 1.3em;
+font-weight: 700;
+}
+
+.footer {
+    background: rgb(255, 250, 250);
+    margin: 1.5em 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer_image {
+display: inline-block;
+width: 12%;
+height: 125px;
+margin: 1.2em 30px;
+}
+
+.footer-list{
+    list-style: none;
+}
+
+.footer_item {
+    display: inline-block;
+    margin: 15px 20px;
+    font-family: 'Playfair Display SC', sans-serif;
+    font-size: 15px;
+    color: #2f605a;
+    border-bottom: 1px solid #2f605a;
+}
+
+.footer-info {
+font-size: 15px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: #2f605a;
+margin: 20px 0;
+}
+
+/* Аудио */
+.main_center {
+text-align: center;
+}
+
+.play-list {
+    max-width: 45%;
+    display: inline-block;
+    margin: 0 50px;
+}
+
+.name-track {
+    font-size: 30px;
+    margin: 20px 0;
+    font-family: 'Merriweather', sans-serif;
+}
+/* Оформление книпки play */
+audio::-webkit-media-controls-play-button {
+background-color: #3d745f;
+border-radius: 50%;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #60b695;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+    background-color: #aa1685cd;
+}
+
+audio::-webkit-media-controls-mute-button {
+    background-color: #3d745f;
+    border-radius: 50%;
+}
+/* Видео */
+.video {
+width: 600px;
+height: 400px;
+margin: 20px 30px;
+}
+
+/* Страница инфо */
+.info {
+    text-align: center;
+    border-bottom: none;
+}
+
+.info__table {
+    width: 90%;
+    margin: 0 auto; /* Центровка */
+    border-collapse: collapse; /* Схлопывание рамки */
+    /* border: 1px solid #2f605a; рамка вокруг таблицы */
+}
+
+.hed {
+    color: #447e68;
+}
+
+.col, .hed {
+    border-bottom: 1px solid #2f605a;
+    padding: 15px;
+}
+
+.row {
+transition: 0.7s;
+}
+.row:hover {
+    background-color: rgba(255, 255, 255, 0.739) ;
+    color: #e09728;
+
+}
+.object {width: 40em;
+height: 20em;}
+
+/* страница отзывы */
+
+.za-kadrom__galery {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 0 20px;
+    }
+
+.img-za-cadrom {
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    border: 2px solid #447e68;
+    padding: 5px 3px;
+}

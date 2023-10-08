@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тайна серных источников</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+        <div class="header-top">
+            <a href="index.html" class="logo-link">
+                <img class="logo-img" src="assets/img/Logo_Les_Secrets_de_Sulphur_Springs.png" alt="logo">
+            </a>
+        </div>
+        <div class="header-bottom">
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu_item"><a href="index.html#person" class="menu_link">Персонажи и актеры</a></li>
+                    <li class="menu_item"><a href="index.html#series" class="menu_link">Серии с описанием</a></li>
+                    <li class="menu_item"><a href="video.html" class="menu_link">Эпизоды</a></li>
+                    <li class="menu_item"><a href="music.html" class="menu_link">Музыка</a></li>
+                    <li class="menu_item"><a href="info.html" class="menu_link">Информация</a></li>
+                    <li class="menu_item"><a href="otziv.html" class="menu_link">Отзывы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main main_center">
+        <section class="play-list">
+            <h3 class="name-track">Трек 1</h3>
+            <!-- Вставка треков -->
+            <audio src="assets/media/music1.mp3" controls class="music"></audio>
+            <h3 class="name-track">Трек 2</h3>
+            <!-- Автоматическое воспроизведение след. трека -->
+            <audio class="music" controls="true" onended="this.src='assets/media/music3.mp3'; this.play()" >
+                <source src="assets/media/music2.mp3" type="audio/mpeg">
+                <source src="assets/media/music2.wav" type="audio/mpeg">
+            </audio>
+            <h3 class="name-track">Трек 3</h3>
+            <audio src="assets/media/music4.mp3" controls class="music"></audio>
+            <h3 class="name-track">Трек 4</h3>
+            <audio src="assets/media/music5.mp3" controls class="music"></audio>
+        </section>
+        <section class="play-list">
+            <h3 class="name-track">Трек 1</h3>
+            <!-- Вставка треков -->
+            <audio src="assets/media/music1.mp3" controls class="music"></audio>
+            <h3 class="name-track">Трек 2</h3>
+            <!-- Автоматическое воспроизведение след. трека -->
+            <audio class="music" controls="true" onended="this.src='assets/media/music3.mp3'; this.play()" >
+                <source src="assets/media/music2.mp3" type="audio/mpeg">
+                <source src="assets/media/music2.wav" type="audio/mpeg">
+            </audio>
+            <h3 class="name-track">Трек 3</h3>
+            <audio src="assets/media/music4.mp3" controls class="music"></audio>
+            <h3 class="name-track">Трек 4</h3>
+            <audio src="assets/media/music5.mp3" controls class="music"></audio>
+        </section>
+            
+    </main>
+</div>
+    <footer class="footer">
+        <img class="footer_image" src="assets/img/footer1.PNG" alt="footer1">
+        <img class="footer_image" src="assets/img/footer2.jpg" alt="footer2">
+        <img class="footer_image" src="assets/img/footer3.jpg" alt="footer3">
+        <img class="footer_image" src="assets/img/footer4.jpg" alt="footer4">
+        <ul class="footer-list">
+            <li class="footer_item">Эпизоды</li>
+            <li class="footer_item">Музыка </li>
+            <li class="footer_item">Информация</li>
+        </ul>
+        <p class="footer-info">© Disney, Все права защищены</p>
+    </footer>
+</body>
+</html>

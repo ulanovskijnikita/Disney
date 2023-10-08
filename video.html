@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тайна серных источников</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+        <div class="header-top">
+            <a href="index.html" class="logo-link">
+                <img class="logo-img" src="assets/img/Logo_Les_Secrets_de_Sulphur_Springs.png" alt="logo">
+            </a>
+        </div>
+        <div class="header-bottom">
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu_item"><a href="index.html#person" class="menu_link">Персонажи и актеры</a></li>
+                    <li class="menu_item"><a href="index.html#series" class="menu_link">Серии с описанием</a></li>
+                    <li class="menu_item"><a href="video.html" class="menu_link">Эпизоды</a></li>
+                    <li class="menu_item"><a href="music.html" class="menu_link">Музыка</a></li>
+                    <li class="menu_item"><a href="info.html" class="menu_link">Информация</a></li>
+                    <li class="menu_item"><a href="otziv.html" class="menu_link">Отзывы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main main_center">
+        <section class="section info">
+            <h1 class="section_title">Трейлеры и тизеры</h1>
+            <!-- Вставка видео и информации для старых браузеров -->
+            <video class="video" controls poster="assets/img/preview1.png">
+                <source scr="assets/media/video1.mp4" type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"">
+                Обновите браузер. Видео не поддерживается
+                <a href="assets/media/video1.mp4">Скачайте видео</a>
+            </video>
+            <!-- Оптимизированное видео -->
+            <video class="video" controls>
+                <source src="assets/media/video3.webm" type="video/webm">
+            </video>
+            <!-- Вставка видео с ютуба -->
+            <iframe class="video" src="https://www.youtube.com/embed/aRlrpK76CFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- Вставка видео через объект -->
+            <!-- <embed src="assets/media/video4.m" type="video/mp4" play="false">  -->
+                <!-- Вставка видео -->
+                <video class="video" src="assets/media/video4.mp4" controls></video>
+        </section>
+    </main>
+</div>
+    <footer class="footer">
+        <img class="footer_image" src="assets/img/footer1.PNG" alt="footer1">
+        <img class="footer_image" src="assets/img/footer2.jpg" alt="footer2">
+        <img class="footer_image" src="assets/img/footer3.jpg" alt="footer3">
+        <img class="footer_image" src="assets/img/footer4.jpg" alt="footer4">
+        <ul class="footer-list">
+            <li class="footer_item">Эпизоды</li>
+            <li class="footer_item">Музыка </li>
+            <li class="footer_item">Информация</li>
+        </ul>
+        <p class="footer-info">© Disney, Все права защищены</p>
+    </footer>
+</body>
+</html>
